@@ -1,0 +1,94 @@
+/* ==========================================================================
+   #TODO
+   ========================================================================== */
+
+.c-todo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: rem(20px) $spacer;
+	border-top: $base-border-width solid $base-border-color;
+}
+
+.c-todo__content {
+	display: flex;
+	align-items: center;
+	transition: all .3s;
+	color: $heading-color;
+	font-size: $text-font-size;
+	cursor: pointer;
+
+	.c-todo.is-completed & {
+		text-decoration: line-through;
+		opacity: .5;
+	}
+}
+
+
+/**
+ * 1. Hide default checkbox and create a new designed checkbox.
+ * 2. Setup check mark icon, based on base icon font.
+ */
+
+.c-todo__input {
+	display: inline-block;
+	margin: 0 $spacer-small 0 0;
+	cursor: pointer;
+	visibility: hidden; /* [1] */
+
+	&::after { /* [1] */
+		display: inline-block;
+		position: relative;
+		top: -3px;
+		width: 16px;
+		height: 16px;
+		transition: all .3s;
+		border: $base-border-width solid $grey-600;
+		border-radius: 100%;
+		background-color: $white;
+		color: $white;
+		line-height: 15px;
+		text-align: center;
+		content: "";
+		visibility: visible; /* [1] */
+	}
+
+	&:checked::after {
+		border-color: $grey-600;
+		background-color: $grey-600;
+		color: $white;
+		font-family: $base-icon-font; /* [2] */
+		font-size: 10px; /* [2] */
+		content: "\f00c";// fa-check
+	}
+}
+
+
+/* Todo Stream
+   ========================================================================== */
+
+/**
+ * Todo task displayed as a stream.
+ */
+
+.c-todo-stream {
+	display: block;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: 7.5%;
+		left: 7px; // [width of (checkbox) input / 2] - 1px
+		width: 2px;
+		height: 85%;
+		background-color: $grey-600;
+		content: "";
+		opacity: 0.2;
+	}
+
+	.c-todo {
+		margin-bottom: 15px;
+		padding: 0;
+		border-top: 0;
+	}
+}

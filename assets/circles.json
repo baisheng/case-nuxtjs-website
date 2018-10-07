@@ -1,0 +1,60 @@
+{"frames": {
+
+"art.png":
+{
+	"frame": {"x":2,"y":2,"w":278,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":278,"h":278},
+	"sourceSize": {"w":278,"h":278}
+},
+"fashion.png":
+{
+	"frame": {"x":282,"y":2,"w":278,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":278,"h":278},
+	"sourceSize": {"w":278,"h":278}
+},
+"mask.png":
+{
+	"frame": {"x":1402,"y":2,"w":266,"h":266},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":266,"h":266},
+	"sourceSize": {"w":266,"h":266}
+},
+"music.png":
+{
+	"frame": {"x":562,"y":2,"w":278,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":278,"h":278},
+	"sourceSize": {"w":278,"h":278}
+},
+"social.png":
+{
+	"frame": {"x":842,"y":2,"w":278,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":278,"h":278},
+	"sourceSize": {"w":278,"h":278}
+},
+"tv.png":
+{
+	"frame": {"x":1122,"y":2,"w":278,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":278,"h":278},
+	"sourceSize": {"w":278,"h":278}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "circles.png",
+	"format": "RGBA8888",
+	"size": {"w":1670,"h":282},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:735d3663577e5c09f2f6f1f3753a60ba:568b94a924bc3cbc11a9b3b9b052088f:14276a904b6b9c9e04e04b9bae5550ee$"
+}
+}

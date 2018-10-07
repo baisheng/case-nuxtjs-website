@@ -1,0 +1,424 @@
+<!doctype html>
+    <html>
+    <head>
+    <meta charset='utf-8' />
+      <title>Pharrell Williams</title>
+
+      <link rel='stylesheet' type='text/css' href='/pw_site/assets/css/grid.min.css'>
+      <meta name='twitter:card' content='summary_large_image'>
+      <meta name='twitter:creator' content='@iao' />
+      <meta name='twitter:title' content='pharrellwilliams.com' />
+      <meta name='twitter:description' content='Visit http://pharrellwilliams.com and explore his world through his fans.' />
+      <meta name='twitter:image' content='http://pharrellwilliams.com/pw_site/assets/img/Share_Asset_Twitter.jpg' />
+      <meta property='og:type'            content='website' />
+      <meta property='og:title' content='pharrellwilliams.com' />
+      <meta property='og:description' content='Visit http://pharrellwilliams.com and explore his world through his fans.' />
+      <meta property='og:url' content='http://pharrellwilliams.com' />
+      <meta property='og:image' content='http://pharrellwilliams.com/pw_site/assets/img/Share_Asset_Facebook.png' />
+      <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/pw_site/assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    </head>
+    <body class='grid'>
+
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 1594434504203590,
+      xfbml      : true,
+      version    : 'v2.5',
+      cookie     : true,
+    });
+
+    window.isFBInit = true
+    if( window.init ) {
+      window.init()
+    }
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="main"></div>
+
+<div id="topbar">
+  <div class="topbar-title desktop">
+    <span class="present">pharrell williams</span>
+    <span class="bellow">find your card</span>
+  </div>
+  <a href="#" class="topbar-bt-menu">
+    <span class="lines">
+      <span class="line line--0"></span>
+      <span class="line line--1"></span>
+      <span class="line line--2"></span>
+    </span>
+  </a>
+  <a href="#" class="topbar-ontour desktop">TOUR DATES</a>
+  <a href="#" class="topbar-bt-card bt bt--topbar desktop">
+    <span id="label-createcard" class="bt-part bt-part--default">CREATE YOUR CARD</span>
+    <span id="label-createcard-hover"  class="bt-part bt-part--hover">CREATE YOUR CARD</span>
+  </a>
+  <a href="#" class="topbar-bt-card mobile">
+    <span class="topbar-bt-card-icon"></span>
+  </a>
+</div>
+
+<div id="filters" class="filters desktop">
+  <ul class="filters-list">
+    <li class="filter selected" data-id="music">
+      <a href="#" class="bt-filter bt-filter--music">
+        <span class="bt-filter-icon"></span>
+        <span class="bt-filter-remove"></span>
+      </a>
+    </li>
+    <li class="filter selected" data-id="tv">
+      <a href="#" class="bt-filter bt-filter--tv">
+        <span class="bt-filter-icon"></span>
+        <span class="bt-filter-remove"></span>
+      </a>
+    </li>
+    <li class="filter selected" data-id="social">
+      <a href="#" class="bt-filter bt-filter--social">
+        <span class="bt-filter-icon"></span>
+        <span class="bt-filter-remove"></span>
+      </a>
+    </li>
+    <li class="filter selected" data-id="art">
+      <a href="#" class="bt-filter bt-filter--art">
+        <span class="bt-filter-icon"></span>
+        <span class="bt-filter-remove"></span>
+      </a>
+    </li>
+    <li class="filter selected" data-id="fashion">
+      <a href="#" class="bt-filter bt-filter--fashion">
+        <span class="bt-filter-icon"></span>
+        <span class="bt-filter-remove"></span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<a class="bt-iamother" href="#">
+  <span class="bg"></span>
+  <span class="content"></span>
+</a>
+
+<div id="menu" class="menu">
+  <ul class="links">
+    <li class="link link--music">
+      <a href="/proj/1/1060"><span>music</span></a>
+    </li>
+    <li class="link link--tv">
+      <a href="/proj/5/990"><span>tv & film</span></a>
+    </li>
+    <li class="link link--social">
+      <a href="/proj/4/986"><span>social good</span></a>
+    </li>
+    <li class="link link--art">
+      <a href="/proj/3/973"><span>art & design</span></a>
+    </li>
+    <li class="link link--fashion">
+      <a href="/proj/2/963"><span>fashion</span></a>
+    </li>
+  </ul>
+  <div class="menu-bottom">
+    <div class="share">
+      <span class="share-title">SHARE THIS SITE ON</span>
+      <a class="share-entry share-entry--fb"href="#">
+        <span class="share-icon"></span>
+      </a>
+      <a class="share-entry share-entry--twitter"href="#">
+        <span class="share-icon"></span>
+      </a>
+    </div>
+  </div>
+  <a href="#" class="menu-bt-close">
+    <span class="icon"></span>
+  </a>
+</div>
+
+<div id="filters">
+  <div class="filter selected" data-id="fashion">fashion</div>
+  <div class="filter selected" data-id="music">music</div>
+  <div class="filter selected" data-id="social">social</div>
+  <div class="filter selected" data-id="art">art</div>
+  <div class="filter selected" data-id="tv">tv</div>
+</div>
+
+<div id="layer">
+  <div class="bg"></div>
+  <div class="contents">
+    <div class="content content--intro">
+      <div class="avatar img--avatar_pharell" style="background-image: url(http://d1eftdjv0gj6pj.cloudfront.net/5691299fccdec-splash.jpg);"></div>
+      <h2>Welcome to pharrellwilliams.com</h2>
+      <h1>Discover Pharrell's world<br/>through his fans.</h1>
+      <a href="#" class="bt bt--splash">
+        <span class="bt-part bt-part--default">ENTER</span>
+        <span class="bt-part bt-part--hover">ENTER</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="onboarding" class="onboarding">
+  <div class="onboarding-bg"></div>
+  <div class="onboarding-step onboarding-step--1">
+    <div class="onboarding-step-icon"></div>
+    <div class="onboarding-step-content">
+      EACH CARD REPRESENTS<br />A FAN'S FAVORITE PROJECT.
+    </div>
+    <div class="onboarding-step-details">
+      <span class="music">music, </span><span class="tv">tv & film, </span><span class="social">social good, </span><span class="art">art & design, </span><span class="fashion">fashion.</span>
+    </div>
+  </div>
+  <div class="onboarding-step onboarding-step--2">
+    <div class="onboarding-step-icon"></div>
+    <div class="onboarding-step-content">
+      YOU CAN SCROLL IN ANY<br />DIRECTION TO EXPLORE CARDS.
+    </div>
+    <div class="onboarding-step-details">
+      Click one to learn more.
+    </div>
+  </div>
+  <div class="onboarding-step onboarding-step--3">
+    <div class="onboarding-step-icon"></div>
+    <div class="onboarding-step-content">
+      AND YOU CAN MAKE<br />ONE TOO.
+    </div>
+    <div class="onboarding-step-details">
+      Click "Create Your Card" up top and tell us what inspires you.
+    </div>
+  </div>
+  <div class="onboarding-bts">
+    <div class="onboarding-bt onboarding-bt--1">
+      NEXT
+    </div>
+    <div class="onboarding-bt onboarding-bt--2">
+      START EXPLORING
+    </div>
+  </div>
+  <a class="onboarding-close" href="#">
+    <span class="icon"></span>
+  </a>
+</div>
+
+<div id="cardflow">
+  <a class="cardflow-close" href="#">
+    <span class="icon"></span>
+  </a>
+</div>
+
+<div id="bt-music" class="bt-music">
+  <span class="bt-music-col"></span>
+  <span class="bt-music-col"></span>
+  <span class="bt-music-col"></span>
+  <span class="bt-music-col"></span>
+  <span class="bt-music-col"></span>
+  <span class="bt-music-col"></span>
+</div>
+
+<!-- iamother popup -->
+<div class="modal iamother">
+
+  <div class="top">
+
+    <div class="inner">
+
+      <div class="logo">
+        <img src="/pw_site/assets/img/home/modal/iamother/logo@2x.png">
+      </div>
+      <!-- end .logo -->
+
+      <a href="#" class="text-toggle">Our Manifesto</a>
+
+      <div class="text hidden">
+
+        <p>By Pharrell Williams</p>
+
+        <p>I serve and represent the OTHERS because I am one myself.</p>
+
+        <p>OTHERS defy expectations and stereotypes. We are curious, ambitious, energetic and have every intention of squeezing the most out of life. Above all, we are individuals.</p>
+
+        <p>OTHERS don&rsquo;t fit into categories. We are not jocks. Or skaters. Or musicians. Or students. Or technologists. Or audiophiles. We want to be all of the above and then some.</p>
+
+        <p>OTHERS are a diverse group of optimistic, bright minds connected by technology and a desire to make our mark, who together can advance culture and even humanity.</p>
+
+        <p>OTHERS are not defined by demographics or geography. We have shared ideals, dreams and a vision for a new reality.</p>
+
+        <p>OTHERS believe individuality is the new wealth. Experiences are the new assets to acquire. Whoever is the most individual wins.</p>
+
+        <p>i am OTHER celebrates people who push society forward. The thinkers. The innovators. The outcasts. History has proven that it&rsquo;s the rule breakers who have the power to change the world.</p>
+
+        <p>Be OTHER.</p>
+
+      </div>
+      <!-- end .text -->
+
+    </div>
+    <!-- end .inner -->
+
+  </div>
+  <!-- end .top -->
+
+  <div class="bottom">
+
+    <div class="inner">
+
+      <div class="social">
+
+        <p>Follow i am OTHER</p>
+
+        <ul>
+          <li><a class="facebook" href="https://www.facebook.com/iamOTHER" target="_blank">Facebook</a></li>
+          <li><a class="twitter" href="https://twitter.com/i_am_OTHER" target="_blank">Twitter</a></li>
+          <li><a class="instagram" href="https://www.instagram.com/i_am_other/" target="_blank">Instagram</a></li>
+          <li><a class="youtube" href="https://www.youtube.com/user/iamOTHER" target="_blank">Youtube</a></li>
+        </ul>
+
+      </div>
+      <!-- end .social -->
+
+      <form>
+        <input type="text" id="newsletter-name" placeholder="NAME">
+        <input type="text" id="newsletter-email" placeholder="EMAIL">
+        <input type="submit" value="Subscribe">
+        <div class="message">
+          <h3>THANK YOU!</h3>
+          <p>STAY TUNED FOR NEWS, UPDATES AND EXCLUSIVE CONTENT FROM i am OTHER.</p>
+        </div>
+      </form>
+
+      <script type="text/javascript">
+        $('.modal.iamother form').submit(function(e) {
+
+          var newsletterName = $(this).find('input#newsletter-name').val();
+          var newsletterEmail = $(this).find('input#newsletter-email').val();
+
+          if (newsletterName && newsletterEmail) {
+
+            $.post('email/add', {
+              name: newsletterName,
+              email: newsletterEmail,
+            });
+
+            $.post('/trackevent', { category: 'Modal: i am OTHER', action: 'Submit', label: 'Newsletter signup' });
+
+            $(this).addClass('sent');
+
+          }
+
+          e.preventDefault();
+
+        });
+
+      </script>
+
+    </div>
+    <!-- end .inner -->
+
+  </div>
+  <!-- end .bottom -->
+
+  <a class="close" href="#">Close</a>
+
+</div>
+<!-- end iamother popup -->
+
+<script type="text/javascript">
+
+  $('.text-toggle').click(function() {
+    $(this).toggleClass('active').next().toggleClass('hidden');
+  });
+
+</script>
+
+<div id="modal-tour" class="modal tour">
+
+  <div class="inner">
+
+    <h2>Tour dates</h2>
+
+    <table>
+
+    </table>
+
+  </div>
+  <!-- end .inner -->
+
+  <a class="close" href="#">Close</a>
+
+</div>
+<!-- end .modal -->
+
+<script type="text/javascript">
+
+  $(function() {
+
+    $.getJSON("/tours/get/active", function(data) {
+
+      $.each(data.response, function(){
+
+        var tour_date = this.tour_date.split(" ");
+        var tour_date_without_time = tour_date[0].split("-");
+        var tour_date_month = tour_date_without_time[1];
+        var tour_date_day = tour_date_without_time[2];
+
+        $('.modal.tour table').append('<tr><td><p>' + tour_date_month + '.' + tour_date_day + '</p></td><td><p>' + this.tour_city + '</p><p class="mobile">' + this.tour_copy + '</p></td><td><p>' + this.tour_copy + '</p></td><td><a href="' + this.tour_url + '" class="button" target="_blank"><span class="desktop">Get tickets</span><span class="mobile">Buy</span></a></td></tr>');
+
+      });
+
+        console.log("done.....");
+        console.dir(data);
+  var json = data
+  console.dir(json.response);
+  if (json.response.length==0) {
+    document.querySelector(".topbar-ontour").display = "none";
+     $(".topbar-ontour").hide();
+  }
+
+    });
+
+  });
+
+</script>
+
+<script type="text/javascript">
+
+  $(function() {
+
+    $('body').on('click','.modal.tour td a.button', function(){
+      $.post('/trackevent', { category: 'Modal: Tour', action: 'Click', label: 'Buy button' });
+    });
+
+  });
+
+</script>
+
+<div id="loading"></div>
+
+<script type="text/javascript">
+
+  
+  var s3Bucket = "d1eftdjv0gj6pj";
+  var bucketname = "iao-production";
+  var urlIframe = "/sample";
+  var baseURL = "http://pharrellwilliams.com/";//"http://ec2-54-152-7-28.compute-1.amazonaws.com/";
+  var baseURLUserImage = "http://"+s3Bucket+".cloudfront.net/";
+  var baseURLUserCardImage = "https://s3.amazonaws.com/"+bucketname+"/";
+  var isMobile = 0;
+
+  if( isMobile ) {
+    document.body.classList.add( "mobile" )
+  }
+
+</script>
+<script src="/pw_site/assets/js/grid.min.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-39907453-1', 'auto');ga('send', 'pageview');</script></body>

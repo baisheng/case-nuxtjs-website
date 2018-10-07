@@ -1,0 +1,38 @@
+{
+  "name": "wepy2-homepage",
+  "version": "1.0.0",
+  "description": "My praiseworthy Nuxt.js project",
+  "author": "baisheng",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "bowser": "^2.0.0-beta.3",
+    "cross-env": "^5.2.0",
+    "gsap": "^2.0.2",
+    "node-sass": "^4.9.3",
+    "nuxt": "^2.1.0",
+    "pixi.js": "^4.8.2",
+    "sass-loader": "^7.1.0",
+    "simplex-noise": "^2.4.0"
+  },
+  "engines": {
+    "node": ">=9.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0",
+    "prettier": "1.14.3"
+  }
+}
