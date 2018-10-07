@@ -343,24 +343,6 @@
         </a>
       </div>
       <div
-        id="modal-tour"
-        class="modal tour">
-
-        <div class="inner">
-
-          <h2>Tour dates</h2>
-
-          <table/>
-
-        </div>
-        <!-- end .inner -->
-
-        <a
-          class="close"
-          href="#">Close</a>
-
-      </div>
-      <div
         id="loading"
         style="opacity: 0.0881211; transform: matrix3d(0.097231, -0.42932, 0, 0, 0.430052, 0.0973969, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"/>
 
@@ -572,4 +554,175 @@ export default class Index extends wepy.page {
     }
   }
 </script>
+<style>
 
+  .filters {
+    position: absolute;
+    left: 30px;
+    /*bottom: -30px;*/
+    width: 140px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #d1d1d1
+  }
+
+  .filters li, .filters ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+
+  .filters-list {
+    position: relative;
+    display: block;
+    top: 7px;
+    left: 17px
+  }
+
+  .bt-filter, .filter {
+    display: inline-block;
+    position: relative
+  }
+
+  .filters-cta {
+    color: #000;
+    padding-left: 35px;
+    margin-bottom: 32px
+  }
+
+  .filter {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0)
+  }
+
+  .filter.selected .bt-filter-icon {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9)
+  }
+
+  .filter.selected a:hover .bt-filter-icon {
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -o-transform: scale(.7);
+    -ms-transform: scale(.7);
+    transform: scale(.7)
+  }
+
+  .filter.selected .bt-filter--fashion .bt-filter-icon {
+    background-color: #14e4da
+  }
+
+  .filter.selected .bt-filter--fashion .bt-filter-icon .icon-part {
+    background-color: #0fb2b4
+  }
+
+  .filter.selected .bt-filter--art .bt-filter-icon {
+    background-color: #443694
+  }
+
+  .filter.selected .bt-filter--art .bt-filter-icon .icon-part {
+    background-color: #2d226b
+  }
+
+  .filter.selected .bt-filter--loves .bt-filter-icon {
+    background-color: #f4621c
+  }
+
+  .filter.selected .bt-filter--loves .bt-filter-icon .icon-part {
+    background-color: #d35214
+  }
+
+  .filter.selected .bt-filter--social .bt-filter-icon {
+    background-color: #a64ac9
+  }
+
+  .filter.selected .bt-filter--social .bt-filter-icon .icon-part {
+    background-color: #723988
+  }
+
+  .filter.selected .bt-filter--music .bt-filter-icon {
+    background-color: #fccd04
+  }
+
+  .filter.selected .bt-filter--music .bt-filter-icon .icon-part {
+    background-color: #e3a202
+  }
+
+  .bt-filter {
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+    overflow: hidden;
+    z-index: 0
+  }
+
+  .bt-filter .bt-filter-icon {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transition: -webkit-transform .25s cubic-bezier(.215, .61, .355, 1);
+    -moz-transition: -moz-transform .25s cubic-bezier(.215, .61, .355, 1);
+    -o-transition: -o-transform .25s cubic-bezier(.215, .61, .355, 1);
+    -ms-transition: -ms-transform .25s cubic-bezier(.215, .61, .355, 1);
+    transition: transform .25s cubic-bezier(.215, .61, .355, 1);
+    background-color: #d1d1d1;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none
+  }
+
+  .bt-filter .bt-filter-remove {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjhBMjNENzZDRjQ4MTFFNTk5REU5NjZCNkNCNTJBQzQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjhBMjNENzdDRjQ4MTFFNTk5REU5NjZCNkNCNTJBQzQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGOEEyM0Q3NENGNDgxMUU1OTlERTk2NkI2Q0I1MkFDNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGOEEyM0Q3NUNGNDgxMUU1OTlERTk2NkI2Q0I1MkFDNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnUa8IcAAAGOSURBVHjaYnz58iUDELQDcTgQfwTiFiBey0Ad4ADErUAsBcTbgbiAEWhhF5BRiqYwBYjnUmiZDxBvRhNbAbLwJ5DBhkVDKhDPoaJlYMAExG9waJoN9SnVLAOCLyALM/FoBlmaTCXLQKASZOEmaPDhAnOI9CkhyxqBeAoTkYYSCl5CljUBcQMsDmFgLgGf4gpeQpaBslk9cqJBDz5SgpeYYKxFFmDBYeh/PFkC5NOHQPyO2GAkZCEseBmhhmMDuwgkIJRgRM+H+IIvlYx8iBGMxFpISpbAG4ykWAgLXncg/opHzV9oCq4nZBgTkS5/AU1I+MAzYgxiIrIEuQjEPHjUMEOrn2RKLSSUz0iOcyYqWkZUMchEpmWgoPMjp5ZhIrPUnwdVQ3Itw0RuqU9uLcNEbqlPbi3DRG6pT24tAyq8rcgp9cmsZT6AWm03gAx1PMFYS2K2SMFTy7wBBakqmcFITvCKgCxcREEwklri7AXFYQY0Ll2A+BsQTwbiCVRo5oNS73doKAkC8QmQzwECDADAJHAD40/qhwAAAABJRU5ErkJggg==) no-repeat;
+    -webkit-background-size: 14px 14px;
+    -moz-background-size: 14px 14px;
+    background-size: 14px 14px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0)
+  }
+
+  .filter .bt-filter:hover .bt-filter-icon {
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    -o-transform: scale(.75);
+    -ms-transform: scale(.75);
+    transform: scale(.75)
+  }
+
+  .filter.selected .bt-filter:hover .bt-filter-remove {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none
+  }
+
+  .filter.selected .bt-filter:hover .bt-filter-icon {
+    background-color: transparent !important;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0)
+  }
+
+</style>
