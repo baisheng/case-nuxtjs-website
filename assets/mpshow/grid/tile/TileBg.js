@@ -4,6 +4,7 @@ import gridLayers from '../GridLayers'
 export default class TileBg extends PIXI.Sprite {
   constructor (size) {
     super(PIXI.Texture.fromFrame("bg_" + size + ".png"))
+    // super(PIXI.Texture.fromFrame("small.png"))
   }
 
   setPosition (x, y) {

@@ -313,7 +313,7 @@ void main(void)
       noiseTime: {type: "1f", value: 0},
       noiseTimeScale: {type: "1f", value: .002},
       noiseValue: {type: "1f", value: 1},
-      // mapNoise: {type: "sampler2D", value: PIXI.Texture.fromImage("/static/perlin_512.jpg")},
+      mapNoise: {type: "sampler2D", value: PIXI.Texture.fromImage("/perlin_512.jpg")},
       px: {type: "1f", value: 1},
       py: {type: "1f", value: 1},
       dx: {type: "1f", value: 1},

@@ -64,8 +64,8 @@ class TileAvatar extends PIXI.Container {
       this._img.width = 130
       this._img.height = 130
     } else {
-      this._img.width = 65
-      this._img.height = 65
+      this._img.width = 120
+      this._img.height = 120
     }
     this._scale = this._img.scale.x
     this._cnt.addChild(this._img)
@@ -99,20 +99,20 @@ class TileAvatar extends PIXI.Container {
 
   over () {
     let languageOffsetY = 70
-    let crossCenter = .6
-    if (this._sSize === "small") {
-      languageOffsetY = 35
-      crossCenter = .7
-    }
+    let crossCenter = 1.2
+    // if (this._sSize === "small") {
+    //   languageOffsetY = 35
+    //   crossCenter = .7
+    // }
     TweenLite.to(this._cnt.scale, .4, {
       x: crossCenter,
       y: crossCenter,
       ease: Power2.easeOut
     })
-    TweenLite.to(this._cnt, .4, {
-      y: languageOffsetY,
-      ease: Power2.easeOut
-    })
+    // TweenLite.to(this._cnt, .4, {
+    //   y: languageOffsetY,
+    //   ease: Power2.easeOut
+    // })
   }
 
   out () {

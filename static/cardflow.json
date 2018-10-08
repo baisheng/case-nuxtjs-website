@@ -1,156 +1,376 @@
-{"frames": {
-
-"cardflow-mobile-gradient.png":
 {
-	"frame": {"x":569,"y":1324,"w":310,"h":224},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":0,"w":310,"h":224},
-	"sourceSize": {"w":310,"h":310}
-},
-"cardflow-mobile_btart.png":
-{
-	"frame": {"x":2,"y":1084,"w":565,"h":96},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":565,"h":96},
-	"sourceSize": {"w":565,"h":96}
-},
-"cardflow-mobile_btfashion.png":
-{
-	"frame": {"x":2,"y":1324,"w":565,"h":96},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":565,"h":96},
-	"sourceSize": {"w":565,"h":96}
-},
-"cardflow-mobile_btlogin.png":
-{
-	"frame": {"x":569,"y":1084,"w":499,"h":96},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":499,"h":96},
-	"sourceSize": {"w":499,"h":96}
-},
-"cardflow-mobile_btmusic.png":
-{
-	"frame": {"x":2,"y":1422,"w":565,"h":96},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":565,"h":96},
-	"sourceSize": {"w":565,"h":96}
-},
-"cardflow-mobile_btsocial.png":
-{
-	"frame": {"x":2,"y":1520,"w":565,"h":96},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":565,"h":96},
-	"sourceSize": {"w":565,"h":96}
-},
-"cardflow-mobile_bttv.png":
-{
-	"frame": {"x":2,"y":1618,"w":565,"h":96},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":565,"h":96},
-	"sourceSize": {"w":565,"h":96}
-},
-"cardflow_bt_back.png":
-{
-	"frame": {"x":792,"y":1720,"w":50,"h":35},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":35},
-	"sourceSize": {"w":50,"h":35}
-},
-"cardflow_bt_full.png":
-{
-	"frame": {"x":2,"y":1716,"w":423,"h":83},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":423,"h":83},
-	"sourceSize": {"w":423,"h":83}
-},
-"cardflow_bt_full_small.png":
-{
-	"frame": {"x":569,"y":1550,"w":363,"h":83},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":363,"h":83},
-	"sourceSize": {"w":363,"h":83}
-},
-"cardflow_bt_lines.png":
-{
-	"frame": {"x":569,"y":1635,"w":423,"h":83},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":423,"h":83},
-	"sourceSize": {"w":423,"h":83}
-},
-"cardflow_bt_lines_small.png":
-{
-	"frame": {"x":427,"y":1720,"w":363,"h":83},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":363,"h":83},
-	"sourceSize": {"w":363,"h":83}
-},
-"cardflow_circle.png":
-{
-	"frame": {"x":2,"y":2,"w":1080,"h":1080},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":1080},
-	"sourceSize": {"w":1080,"h":1080}
-},
-"cardflow_icon-close.png":
-{
-	"frame": {"x":881,"y":1388,"w":31,"h":31},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":31},
-	"sourceSize": {"w":31,"h":31}
-},
-"cardflow_icon_fb.png":
-{
-	"frame": {"x":1070,"y":1084,"w":12,"h":24},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24}
-},
-"cardflow_separator.png":
-{
-	"frame": {"x":1084,"y":2,"w":4,"h":1131},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":1131},
-	"sourceSize": {"w":4,"h":1131}
-},
-"carflow-mobile_btback.png":
-{
-	"frame": {"x":881,"y":1324,"w":88,"h":62},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":56,"y":40,"w":88,"h":62},
-	"sourceSize": {"w":200,"h":142}
-},
-"carflow_bg-bt-next.png":
-{
-	"frame": {"x":2,"y":1182,"w":1084,"h":140},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":1084,"h":140},
-	"sourceSize": {"w":1084,"h":140}
-}},
-"meta": {
-	"app": "http://www.codeandweb.com/texturepacker",
-	"version": "1.0",
-	"image": "cardflow.png",
-	"format": "RGBA8888",
-	"size": {"w":1090,"h":1805},
-	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:ce3f03bca9f59aa9927406ec5d2dd4a4:58460acc4cb53634166a9fef776732d2:96a2d688a9db8204051fc53c61cf8e17$"
-}
+  "frames": {
+    "cardflow-mobile-gradient.png": {
+      "frame": {
+        "x": 569,
+        "y": 1324,
+        "w": 310,
+        "h": 224
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 310,
+        "h": 224
+      },
+      "sourceSize": {
+        "w": 310,
+        "h": 310
+      }
+    },
+    "cardflow-mobile_btart.png": {
+      "frame": {
+        "x": 2,
+        "y": 1084,
+        "w": 565,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 565,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 565,
+        "h": 96
+      }
+    },
+    "cardflow-mobile_btfashion.png": {
+      "frame": {
+        "x": 2,
+        "y": 1324,
+        "w": 565,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 565,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 565,
+        "h": 96
+      }
+    },
+    "cardflow-mobile_btlogin.png": {
+      "frame": {
+        "x": 569,
+        "y": 1084,
+        "w": 499,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 499,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 499,
+        "h": 96
+      }
+    },
+    "cardflow-mobile_btmusic.png": {
+      "frame": {
+        "x": 2,
+        "y": 1422,
+        "w": 565,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 565,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 565,
+        "h": 96
+      }
+    },
+    "cardflow-mobile_btsocial.png": {
+      "frame": {
+        "x": 2,
+        "y": 1520,
+        "w": 565,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 565,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 565,
+        "h": 96
+      }
+    },
+    "cardflow-mobile_bttv.png": {
+      "frame": {
+        "x": 2,
+        "y": 1618,
+        "w": 565,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 565,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 565,
+        "h": 96
+      }
+    },
+    "cardflow_bt_back.png": {
+      "frame": {
+        "x": 792,
+        "y": 1720,
+        "w": 50,
+        "h": 35
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 35
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 35
+      }
+    },
+    "cardflow_bt_full.png": {
+      "frame": {
+        "x": 2,
+        "y": 1716,
+        "w": 423,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 423,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 423,
+        "h": 83
+      }
+    },
+    "cardflow_bt_full_small.png": {
+      "frame": {
+        "x": 569,
+        "y": 1550,
+        "w": 363,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 363,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 363,
+        "h": 83
+      }
+    },
+    "cardflow_bt_lines.png": {
+      "frame": {
+        "x": 569,
+        "y": 1635,
+        "w": 423,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 423,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 423,
+        "h": 83
+      }
+    },
+    "cardflow_bt_lines_small.png": {
+      "frame": {
+        "x": 427,
+        "y": 1720,
+        "w": 363,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 363,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 363,
+        "h": 83
+      }
+    },
+    "cardflow_circle.png": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 1080,
+        "h": 1080
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 1080
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 1080
+      }
+    },
+    "cardflow_icon-close.png": {
+      "frame": {
+        "x": 881,
+        "y": 1388,
+        "w": 31,
+        "h": 31
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 31,
+        "h": 31
+      },
+      "sourceSize": {
+        "w": 31,
+        "h": 31
+      }
+    },
+    "cardflow_icon_fb.png": {
+      "frame": {
+        "x": 1070,
+        "y": 1084,
+        "w": 12,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 12,
+        "h": 24
+      }
+    },
+    "cardflow_separator.png": {
+      "frame": {
+        "x": 1084,
+        "y": 2,
+        "w": 4,
+        "h": 1131
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 1131
+      },
+      "sourceSize": {
+        "w": 4,
+        "h": 1131
+      }
+    },
+    "carflow-mobile_btback.png": {
+      "frame": {
+        "x": 881,
+        "y": 1324,
+        "w": 88,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 40,
+        "w": 88,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 142
+      }
+    },
+    "carflow_bg-bt-next.png": {
+      "frame": {
+        "x": 2,
+        "y": 1182,
+        "w": 1084,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1084,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 1084,
+        "h": 140
+      }
+    }
+  },
+  "meta": {
+    "app": "http://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "cardflow.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1090,
+      "h": 1805
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:ce3f03bca9f59aa9927406ec5d2dd4a4:58460acc4cb53634166a9fef776732d2:96a2d688a9db8204051fc53c61cf8e17$"
+  }
 }

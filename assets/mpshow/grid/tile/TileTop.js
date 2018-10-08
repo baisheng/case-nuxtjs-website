@@ -120,11 +120,11 @@ export default class TileTop extends PIXI.Container {
     TweenLite.killTweensOf(this._shape)
     TweenLite.killTweensOf(this._iconShare)
     TweenLite.killTweensOf(this._iconShareHover)
-    TweenLite.to(this._shape, .8, {
-      delay: .2,
-      alpha: 1,
-      ease: Sine.easeOut
-    });
+    // TweenLite.to(this._shape, .8, {
+    //   delay: .2,
+    //   alpha: 1,
+    //   ease: Sine.easeOut
+    // });
     TweenLite.to(this._iconShare, .25, {
       delay: this._size === 'big' ? .5 : .15,
       alpha: 0,

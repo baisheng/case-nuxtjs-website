@@ -12,7 +12,7 @@ config.colors = {
 }
 config.types = ["art", "fashion", "music", "social", "tv"]
 config.dimensions = {
-  padding: 5,
+  padding: 20,
   tile: 215,
   tileBig: 434
 }

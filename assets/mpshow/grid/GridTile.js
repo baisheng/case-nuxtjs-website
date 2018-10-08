@@ -11,7 +11,8 @@ export default class GridTile {
     this.x = 0;
     this.y = 0;
     this._isMine = isMine;
-    const typeOrigin = GridConfig.types[Math.random() * GridConfig.types.length >> 0];
+    // const typeOrigin = GridConfig.types[Math.random() * GridConfig.types.length >> 0];
+    // console.log(typeOrigin);
     // this._typeOrigin = this._isMine ? gridDataManager.getMineIfICan(typeOrigin).type : typeOrigin;
     // this._typeOrigin = this._isMine ? gridDataManager.getMineIfICan(typeOrigin).type : typeOrigin;
     this._typeOrigin = 'music'

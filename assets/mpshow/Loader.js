@@ -43,7 +43,7 @@ export default class Loader extends Emitter {
     this._loader.add("/odin_regular_75.fnt");
     this._loader.add("/odin_bold_32.fnt");
     this._loader.add("/odin_bold_75.fnt");
-
+    this._loader.add("/small_tile.json");
     // this._loader.add("/pw_site/img/grid/share_base2.jpg");
     // this._loader.add("/pw_site/img/grid/share_circle.png");
     // this._loader.add("/pw_site/spritesheets/circles.json");

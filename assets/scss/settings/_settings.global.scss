@@ -29,7 +29,8 @@ $grey-400: #dfe3e9 !default; // dfe1e5 E3E8EF
 $grey-500: #bbc5d5 !default;
 $grey-600: #b7c0cd !default; // c2cad4
 $grey-700: #9fa9ba !default;
-$grey-800: #7f8fa4 !default; // 7f8fa4
+//$grey-800: #7f8fa4 !default; // 7f8fa4
+$grey-800: #9b9b9b !default; // 7f8fa4
 $gunmetal-100: #475364 !default;
 $gunmetal-200: #354052 !default; // main
 $gunmetal-300: #2d3848 !default;
@@ -104,7 +105,7 @@ $color-linkedin : #222 !default;
     src: url("../fonts/Inter-UI-Italic.woff2?v=2.3") format("woff2"),
          url("../fonts/Inter-UI-Italic.woff?v=2.3") format("woff");
   }
-  
+
   @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
@@ -119,7 +120,7 @@ $color-linkedin : #222 !default;
     src: url("../fonts/Inter-UI-MediumItalic.woff2?v=2.3") format("woff2"),
          url("../fonts/Inter-UI-MediumItalic.woff?v=2.3") format("woff");
   }
-  
+
   @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
@@ -134,7 +135,7 @@ $color-linkedin : #222 !default;
     src: url("../fonts/Inter-UI-BoldItalic.woff2?v=2.3") format("woff2"),
          url("../fonts/Inter-UI-BoldItalic.woff?v=2.3") format("woff");
   }
-  
+
   @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
@@ -149,7 +150,7 @@ $color-linkedin : #222 !default;
     src: url("../fonts/Inter-UI-BlackItalic.woff2?v=2.3") format("woff2"),
          url("../fonts/Inter-UI-BlackItalic.woff?v=2.3") format("woff");
   }
-$base-font-family: "Inter UI", PingFang SC,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,STHeiti,\\534E\6587\7EC6\9ED1,sans-serif;
+$base-font-family: PingFang SC,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,STHeiti,\\534E\6587\7EC6\9ED1,sans-serif;
 // $base-font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 // $base-font-family: "Source Sans Pro", sans-serif !default;
 $base-font-size: 16px !default;
@@ -164,8 +165,8 @@ $text-tiny-font-size: rem(10px) !default;
 $text-small-font-size: rem(12px) !default;
 $text-font-size: rem(14px) !default;
 $text-large-font-size: rem(16px) !default;
-$text-color: $gunmetal-200;
-$text-strong-color: $gunmetal-200;
+$text-color: $grey-800;
+$text-strong-color: $black;
 $text-mark-color: $white;
 $text-mark-background-color: #ff0;
 $text-mute-color: $color-mute;
@@ -187,7 +188,7 @@ $link-hover-text-decoration: underline !default;
 //
 // 3. Backgrounds
 // ========================================================================== */
-$body-background-color: $grey-100 !default;
+$body-background-color: #fff !default;
 // $body-background-color: #EFF3F6 !default;
 $base-background-color: $white !default;
 //

@@ -1,0 +1,20 @@
+{"frames": {
+
+"small.png":
+{
+	"frame": {"x":0,"y":0,"w":216,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":296},
+	"sourceSize": {"w":296,"h":296}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "small_tile.png",
+	"format": "RGBA8888",
+	"size": {"w":296,"h":296},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c1b82bd1a9449ae8d4c016706b7371a2:1346930e5ebb60e0843ca15f7b1c4cff:4839feb92267f734bd26206c0ef428c9$"
+}
+}

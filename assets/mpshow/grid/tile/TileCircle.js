@@ -22,7 +22,8 @@ export default class TileCircle extends PIXI.Sprite {
 
     if (size === 'small') {
       this._size = GridConfig.dimensions.tile
-      this._scale = 69 / this._originSpriteSize
+      this._scale = .90
+      // this._scale = 130 / this._originSpriteSize
     }
     this.scale.x = this._scale
     this.scale.y = this._scale
@@ -65,21 +66,22 @@ export default class TileCircle extends PIXI.Sprite {
   }
 
   over () {
-    let imgOffsetY = 2
-    let radius = .62
-    if (this._sSize === "small") {
-      imgOffsetY = 1
-      radius = .72
-    }
+    // let imgOffsetY = 2
+    // let radius = .62
+    let radius = 1.2
+    // if (this._sSize === "small") {
+    //   imgOffsetY = 1
+    //   radius = .72
+    // }
     TweenLite.to(this.scale, .4, {
       x: radius * this._scale,
       y: radius * this._scale,
       ease: Power2.easeOut
     })
-    TweenLite.to(this, .4, {
-      y: this._yPos - .5 * this._size + .5 * this._originSpriteSize * this._scale + imgOffsetY,
-      ease: Power2.easeOut
-    })
+    // TweenLite.to(this, .4, {
+    //   y: this._yPos - .5 * this._size + .5 * this._originSpriteSize * this._scale + imgOffsetY,
+    //   ease: Power2.easeOut
+    // })
   }
 
   out () {

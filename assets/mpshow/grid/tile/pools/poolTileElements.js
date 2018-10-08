@@ -44,25 +44,25 @@ class TileElements {
     this._elts = []
     this._bg = new TileBg(this._size)
     this._elts.push(this._bg)
-    if (isMobile) {
-      this._shape = new TileShapeStatic(this._size)
-    } else {
-      this._shape = new TileShape(this._size)
-    }
-    this._shape = new TileShape(this._size)
-    this._elts.push(this._shape)
-    if (!isMobile) {
-      this._img = new TileImg(this._size)
-      this._elts.push(this._img)
-    }
+    // if (isMobile) {
+    //   this._shape = new TileShapeStatic(this._size)
+    // } else {
+    //   this._shape = new TileShape(this._size)
+    // }
+    // this._shape = new TileShape(this._size)
+    // this._elts.push(this._shape)
+    // if (!isMobile) {
+    //   this._img = new TileImg(this._size)
+    //   this._elts.push(this._img)
+    // }
     this._top = new TileTop(this._size)
     this._elts.push(this._top)
     this._circle = new TileCircle(this._size)
     this._elts.push(this._circle)
     this._avatar = new TileAvatar(this._size)
     this._elts.push(this._avatar)
-    this._borders = new TileBorders(this._size)
-    this._elts.push(this._borders)
+    // this._borders = new TileBorders(this._size)
+    // this._elts.push(this._borders)
     this._infosreg = new TileInfosReg(this._size)
     this._elts.push(this._infosreg)
     this._infosBold = new TileInfosBold(this._size)

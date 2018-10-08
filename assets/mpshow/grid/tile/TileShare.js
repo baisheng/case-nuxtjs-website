@@ -37,10 +37,10 @@ export default class TileShare extends PIXI.Container {
     this._zoneTitle.alpha = 0
     this.addChild(this._zoneTitle)
     this._binds = {}
-    this._binds.onFB = this._onFB.bind(this)
-    this._binds.onTwitter = this._onTwitter.bind(this)
-    this._binds.onTumblr = this._onTumblr.bind(this)
-    this._binds.onPinterest = this._onPinterest.bind(this)
+    // this._binds.onFB = this._onFB.bind(this)
+    // this._binds.onTwitter = this._onTwitter.bind(this)
+    // this._binds.onTumblr = this._onTumblr.bind(this)
+    // this._binds.onPinterest = this._onPinterest.bind(this)
     this._binds.onDownload = this._onDownload.bind(this)
     this._binds.onCloseOver = this._onCloseOver.bind(this)
     this._binds.onCloseOut = this._onCloseOut.bind(this)
@@ -49,9 +49,9 @@ export default class TileShare extends PIXI.Container {
     this._binds.onOut = this._onOut.bind(this)
     this._py = 53
     this._lines = []
-    this._initLine("fb", this._binds.onFB)
-    this._initLine("twitter", this._binds.onTwitter)
-    this._initLine("pinterest", this._binds.onPinterest)
+    // this._initLine("fb", this._binds.onFB)
+    // this._initLine("twitter", this._binds.onTwitter)
+    // this._initLine("pinterest", this._binds.onPinterest)
     this._initLine("download", this._binds.onDownload)
     this.alpha = 0
     this._gMask = new PIXI.Graphics

@@ -3,7 +3,8 @@ import gridLayers from '../GridLayers'
 
 class TileBorders extends PIXI.Sprite {
   constructor (size) {
-    super(PIXI.Texture.fromFrame(`borders_${size}.png`))
+    // super(PIXI.Texture.fromFrame(`borders_${size}.png`))
+    super(PIXI.Texture.fromFrame(`borders.png`))
     this.anchor.x = .5
     this.anchor.y = .5
     this.scale.set(.5, .5)
