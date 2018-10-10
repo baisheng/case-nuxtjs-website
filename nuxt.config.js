@@ -36,7 +36,8 @@ module.exports = {
   */
   plugins: [
     {src: '~/plugins/pixi', ssr: false},
-    {src: '~/plugins/mpshow', ssr: false}
+    {src: '~/plugins/mpshow', ssr: false},
+    '~/plugins/prism'
   ],
 
   /*

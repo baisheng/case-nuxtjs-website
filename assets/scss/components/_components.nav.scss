@@ -3,8 +3,8 @@
    ========================================================================== */
 
 /**
- * Nav sits within the main navbar area. It’s fully responsive as it holds 
- * navigation items/links that will be collapsed, toggled in small 
+ * Nav sits within the main navbar area. It’s fully responsive as it holds
+ * navigation items/links that will be collapsed, toggled in small
  * screens via `c-nav-toggle` component.
  */
 
@@ -14,7 +14,7 @@
 	/**
 	 * Responsive Nav
 	 *
-	 * 1. Remove extra margin when `u-mr-auto` utility is used. 
+	 * 1. Remove extra margin when `u-mr-auto` utility is used.
 	 */
 	@include respond-to($breakpoint-tablet) {
 		position: relative;
@@ -54,7 +54,7 @@
 }
 
 
-/** 
+/**
  * 1. Allow positioning dropdown menus inside nav items.
  */
 
@@ -81,7 +81,8 @@
 
 .c-nav__link {
 	color: $nav-link-color;
-	font-size: $nav-link-font-size;
+  //color: $heading-color;
+  font-size: $nav-link-font-size;
 	font-weight: $nav-link-font-weight;
 
 	&:hover {
@@ -104,9 +105,9 @@
    ========================================================================== */
 
 /**
- * Nav toggle is the popular hamburger-like icon that would show/hide `c-nav` 
+ * Nav toggle is the popular hamburger-like icon that would show/hide `c-nav`
  * via javascript through `js-nav-toggle` to toggle `is-open` class.
- * 
+ *
  * 1. Remove default button styles.
  * 2. Show only on small screens, hide on large screen.
  */
@@ -130,7 +131,7 @@
 
 
 /**
- * The hamburger icon itself, 3 bars stacked on top of each other. 
+ * The hamburger icon itself, 3 bars stacked on top of each other.
  */
 
 .c-nav-toggle__bar {

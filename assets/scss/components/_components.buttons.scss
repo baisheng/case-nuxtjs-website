@@ -5,8 +5,8 @@
 /**
  * 1. Apply (btn--info) background if `c-btn--{style}` class isn't specified.
  * 2. Align icon (if placed inside button) with text properly.
- * 3. Add dropdown icon/arrow to button with `has-dropdown` class, it depends 
- *    on (FontAwesome) icon font so make sure to modify it if you changed your 
+ * 3. Add dropdown icon/arrow to button with `has-dropdown` class, it depends
+ *    on (FontAwesome) icon font so make sure to modify it if you changed your
  *    base icon font.
  * 4. Use `disabled` property on <button> elements, and `is-disabled` class on
  *    <a> elements as they don't support `disabled` property.
@@ -85,6 +85,10 @@
 	}
 }
 
+.c-btn--reset {
+  background-color: transparent;
+  border-width: 0;
+}
 .c-btn--fullwidth {
 	width: 100%;
 }
@@ -112,8 +116,8 @@
    ========================================================================== */
 
 /**
- * Buttons have a simple, nice gradient on the background, we use 
- * sass's `darken()` method to generate a dark shade of the requested color, 
+ * Buttons have a simple, nice gradient on the background, we use
+ * sass's `darken()` method to generate a dark shade of the requested color,
  * then we use our `linear-gradient` mixin to generate the background gradient.
  */
 

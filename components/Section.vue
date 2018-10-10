@@ -1,5 +1,5 @@
 <template>
-  <section class="c-features__hero">
+  <section class="c-hero">
     <header class="c-navbar u-mb-small">
       <!-- <a class="c-navbar__brand" href="/" title="Homepage"> -->
       <!-- <img src="img/wepylogo.png" alt="Dashboard UI kit"> -->

@@ -19,8 +19,10 @@
     "node-sass": "^4.9.3",
     "nuxt": "^2.1.0",
     "pixi.js": "^4.8.2",
+    "prismjs": "^1.15.0",
     "sass-loader": "^7.1.0",
-    "simplex-noise": "^2.4.0"
+    "simplex-noise": "^2.4.0",
+    "vue-prism-component": "^1.0.1"
   },
   "engines": {
     "node": ">=9.0.0"

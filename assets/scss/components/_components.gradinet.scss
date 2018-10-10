@@ -1,0 +1,9 @@
+.c-gradient, .c-card, .c-card_badge {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5fa));
+  background-image: linear-gradient(#fff, #f5f5fa)
+}
+
+.c-gradient-side {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5f5fa), color-stop(#fff), to(#f5f5fa));
+  background-image: linear-gradient(to right, #f5f5fa, #fff, #f5f5fa)
+}
