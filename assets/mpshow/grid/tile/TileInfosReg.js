@@ -12,16 +12,25 @@ export default class TileInfosReg extends PIXI.Container {
     this._sSize = size
     this._size = this._sSize === 'big' ? GridConfig.dimensions.tileBig : GridConfig.dimensions.tile;
     const fontSize = this._sSize === 'big' ? 16 : 13;
-    this._tf = new PIXI.extras.BitmapText("BBBB", {
-        font: `${fontSize}px Odin Rounded Regular Small`
-      }
-    )
+    // this._tf = new PIXI.extras.BitmapText("BBBB", {
+    //     font: `${fontSize}px Odin Rounded Regular Small`
+    //   }
+    // )
+    const style = new PIXI.TextStyle({
+      fillGradientType: 1,
+      fontFamily: 'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif',
+      fontSize: 32
+    })
+    this._tf = new PIXI.Text('Hello World', style)
+
     this._tf.tint = 10724516
     this.addChild(this._tf)
-    this._tfOver = new PIXI.extras.BitmapText("BBBB", {
-        font: `${fontSize}px Odin Rounded Regular Small`
-      }
-    )
+    // this._tfOver = new PIXI.extras.BitmapText("BBBB", {
+    //     font: `${fontSize}px Odin Rounded Regular Small`
+    //   }
+    // )
+    this._tfOver = new PIXI.Text('Hello World', style)
+
     this._tfOver.alpha = 0
     this.addChild(this._tfOver)
 

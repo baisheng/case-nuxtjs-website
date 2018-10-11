@@ -1,10 +1,10 @@
 /* eslint-disable prefer-rest-params */
-import GridConfig from "../grid/GridConfig";
-import GridData from "../grid/data/GridData";
-import cardUser from "../cardflow/cardUser";
-import filters from "../ui/filters";
+import GridConfig from '../grid/GridConfig'
+import GridData from '../grid/data/GridData'
+import cardUser from '../cardflow/cardUser'
+import filters from '../ui/filters'
 
-import Emitter from "../../fz/events/Emitter";
+import Emitter from '../../fz/events/Emitter'
 
 class GridDataManager extends Emitter {
   constructor () {
@@ -15,31 +15,33 @@ class GridDataManager extends Emitter {
   }
 
   _createFakeData () {
-    this._data = {};
+    this._data = {}
     let type = ''
     const n = GridConfig.types.length
     for (let i = 0; i < n; i++) {
-      type = GridConfig.types[i];
+      type = GridConfig.types[i]
       this._data[type] = new GridData(type)
     }
   }
 
   set (type, value) {
+    console.log(type)
     this._data[type] = this._parse(type, value)
   }
 
   _parse (type, value) {
-    const list = [];
-    let data = null;
-    const n = value.length;
+    const list = []
+    let data = null
+    const n = value.length
     for (let i = 0; i < n; i++) {
-      data = new GridData(type, value[i]);
-      if (cardUser.id && data.idFB === cardUser.id) {
-        this._myData = data;
-      } else {
-        list.push(data);
-      }
+      data = new GridData(type, value[i])
+      // if (cardUser.id && data.idFB === cardUser.id) {
+      //   this._myData = data;
+      // } else {
+      list.push(data)
+      // }
     }
+    console.log(list)
     return list
   }
 
@@ -51,7 +53,9 @@ class GridDataManager extends Emitter {
 
   getRandom () {
     const type = filters.getRandom()
+    console.log(type + 'xpxx-----')
     const list = this._data[type]
+    console.log(list.length)
     const data = list[Math.random() * list.length >> 0]
     return data
   }

@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.3",
+    "axios": "^0.18.0",
     "bowser": "^2.0.0-beta.3",
     "cross-env": "^5.2.0",
     "gsap": "^2.0.2",
@@ -22,10 +24,11 @@
     "prismjs": "^1.15.0",
     "sass-loader": "^7.1.0",
     "simplex-noise": "^2.4.0",
-    "vue-prism-component": "^1.0.1"
+    "vue-prism-component": "^1.0.1",
+    "lodash": "latest"
   },
   "engines": {
-    "node": ">=9.0.0"
+    "node": ">=8.9.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

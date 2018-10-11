@@ -7,23 +7,16 @@
           <i class="block-badge center" />
           <h2 class="u-text-bold">应用案例</h2>
           <p class="u-h3 u-text-mute u-mb-large u-text-bold">
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
-            <span class="c-badge c-badge--small c-badge--primary">腾讯安心计划</span>
+            <span
+              v-for="item in caseData"
+              :key="item.qrcode"
+              :class="{'c-badge u-mr-small c-badge--default': true, 'c-badge--opensource': item.opensource}">
+              <img
+                v-if="item.opensource"
+                class="c-icon--small v-align-text-bottom"
+                src="/assets/img/opensource.svg">
+              {{ item.name }}
+            </span>
           </p>
         </div>
       </div>
@@ -32,24 +25,12 @@
       id="mpshow"
       style="height: 500px;"
       class="u-mt-large u-mb-medium  "/>
-    <!--style="transform: matrix(1, 0, 0, 1, 0, -60);"-->
 
     <div
+      v-show="filterEnable"
       id="filters"
       class="filters desktop">
-      <!--{{categories}}-->
       <ul class="filters-list">
-        <li
-          class="filter selected"
-          data-id="music"
-          style="opacity: 1;">
-          <a
-            href="#"
-            class="bt-filter bt-filter--music">
-            <span class="bt-filter-icon"/>
-            <span class="bt-filter-remove"/>
-          </a>
-        </li>
         <li
           v-for="item in visibleCategories"
           :data-id="item.slug"
@@ -95,8 +76,18 @@
   import Vue from 'vue'
 
   export default {
+    name: 'CasesList',
+    props: {
+      caseData: {
+        type: Array,
+        default: () => {
+          return []
+        }
+      }
+    },
     data () {
       return {
+        filterEnable: false,
         // These need to be contained in an object because providers are not reactive.
         PIXIWrapper: {
           // Expose PIXI and the created app to all descendants.
@@ -105,9 +96,8 @@
         // Expose the event bus to all descendants so they can listen for the app-ready event.
         EventBus: new Vue(),
         visibleCategories: [
-          { name: '精选', slug: 'featured' },
-          { name: '热门', slug: 'popular' },
-          { name: '最新', slug: 'new' }
+          { name: '默认', slug: 'default' },
+          { name: '开源', slug: 'opensource' }
         ]
       }
     },
@@ -123,16 +113,8 @@
       // console.log(this.fullList.data)
       this.$mpShow.init()
       this.$mpShow.loader.loadAssets()
-      this.$mpShow.loader.loadData([{
-        author: {
-          avatar: '/33113446-5543e062-cf93-11e7-85d7-166c9f36e31d.jpg',
-          id: '_baisheng'
-        },
-        // id: 'me',
-        title: 'showme',
-        avatar: 'lala'
-      }])
-      // }
+      this.$mpShow.loader.loadData(this.caseData);
+      // console.log(this.caseData)
     },
     methods: {
       wxEnter: function() {
@@ -180,9 +162,9 @@
       -webkit-transform: skewY(-3deg);
       -ms-transform: skewY(-3deg);
       transform: skewY(-3deg);
-     /* -webkit-transform: skewY(-6deg);
-      -ms-transform: skewY(-6deg);
-      transform: skewY(-6deg);*/
+      /* -webkit-transform: skewY(-6deg);
+       -ms-transform: skewY(-6deg);
+       transform: skewY(-6deg);*/
       z-index: 0;
       top: -60px;
       left: 0;
@@ -214,6 +196,6 @@
   }
   /*}*/
   /*.spacer40\:fluid {*/
-    /*height: 25px !important;*/
+  /*height: 25px !important;*/
   /*}*/
 </style>

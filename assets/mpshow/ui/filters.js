@@ -93,7 +93,7 @@ class Filters extends Emitter {
   }
 
   getRandom () {
-    return this._filters ? this._filters[this._filters.length * Math.random() >> 0] : GridConfig.types[5 * Math.random() >> 0];
+    return this._filters ? this._filters[this._filters.length * Math.random() >> 0] : GridConfig.types[2 * Math.random() >> 0];
   }
 
   getFilters () {

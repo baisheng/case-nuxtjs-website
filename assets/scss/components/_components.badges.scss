@@ -57,3 +57,31 @@
 .c-badge--secondary {
 	background-color: $badge-secondary-background-color;
 }
+
+.c-badge--default {
+  background: #FBFBFD;
+  border: 1px solid #EAEDF3;
+  color: $gunmetal-100;
+}
+
+.c-badge--opensource {
+  background: #FBFBFD;
+  border: 1px solid #EAEDF3;
+  color: $color-success;
+  min-width: 100px;
+  vertical-align: middle;
+}
+
+.c-icon {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden
+}
+
+.c-icon--small {
+  width: 16px !important;
+  height: 16px !important
+}
+
+.v-align-text-bottom {
+  vertical-align: text-bottom!important;
+}

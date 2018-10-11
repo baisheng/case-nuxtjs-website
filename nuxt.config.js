@@ -44,7 +44,14 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
+
+  axios: {
+    // proxyHeaders: false
+    proxyHeaders: false,
+    credentials: false
+  },
 
   /*
   ** Build configuration

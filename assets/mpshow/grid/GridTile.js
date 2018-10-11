@@ -11,11 +11,12 @@ export default class GridTile {
     this.x = 0;
     this.y = 0;
     this._isMine = isMine;
+    this._typeOrigin = GridConfig.types[Math.random()];
     // const typeOrigin = GridConfig.types[Math.random() * GridConfig.types.length >> 0];
     // console.log(typeOrigin);
     // this._typeOrigin = this._isMine ? gridDataManager.getMineIfICan(typeOrigin).type : typeOrigin;
     // this._typeOrigin = this._isMine ? gridDataManager.getMineIfICan(typeOrigin).type : typeOrigin;
-    this._typeOrigin = 'music'
+    // this._typeOrigin = 'default'
     this.isAdded = false;
     this._isMyCard = false;
     this.idxs = [];
@@ -140,7 +141,8 @@ export default class GridTile {
     this._isMyCard = false;
     this._isMine = false;
     this._dataMyCard = null;
-    this._typeOrigin = self.types[Math.random() * self.types.length >> 0];
+    // this._typeOrigin = self.types[Math.random() * self.types.length >> 0];
+    this._typeOrigin = self.types[Math.random()];
     this._updateData(true, true);
   }
 

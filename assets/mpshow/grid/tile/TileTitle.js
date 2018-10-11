@@ -21,21 +21,20 @@ export default class TileTitle extends PIXI.Container {
     //   align: 'center'
     // })
     const style = new PIXI.TextStyle({
-      fill: [
-        "#FFFFFF"
-      ],
       fillGradientType: 1,
-      fontFamily: "Courier New",
-      fontSize: 32
-    });
-    this._tf = new PIXI.Text('Hello World', style);
+      fontFamily: 'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif',
+      fontSize: 32,
+      fontWeight: 800
+    })
+    this._tf = new PIXI.Text('Hello World', style)
     this.addChild(this._tf)
 
     this.alpha = 0
   }
 
   update (data) {
-    this._tf.text = data.texts.hover.toLowerCase()
+    // this._tf.text = data.texts.hover.toLowerCase()
+    this._tf.text = data.texts.hover
     this._from = 60
     let decal = 20
     if (this._sSize === 'small') {
@@ -45,7 +44,7 @@ export default class TileTitle extends PIXI.Container {
     this.x = this._x + .5 * (this._size - this._tf.width) >> 0
 
     this._yPos = this._y + .5 * (this._size - this._tf.height) + decal >> 0
-    this.y = this._yPos + this._from;
+    this.y = this._yPos + this._from
     // this.x = 100
     // this.y = 10
   }
@@ -65,17 +64,17 @@ export default class TileTitle extends PIXI.Container {
   }
 
   over () {
-    TweenLite.killTweensOf(this);
-    TweenLite.to(this, .3, {
-      delay: .15,
-      alpha: 1,
-      y: this._yPos,
-      ease: Power1.easeOut
-    })
+    // TweenLite.killTweensOf(this)
+    // TweenLite.to(this, .3, {
+    //   delay: .15,
+    //   alpha: 1,
+    //   y: this._yPos,
+    //   ease: Power1.easeOut
+    // })
   }
 
   out () {
-    TweenLite.killTweensOf(this);
+    TweenLite.killTweensOf(this)
     TweenLite.to(this, .25, {
       alpha: 0,
       y: this._yPos + this._from,

@@ -1,22 +1,22 @@
 /* eslint-disable no-void,prefer-rest-params,no-unused-expressions,space-unary-ops,no-return-assign,no-undef */
 // const isMobile = PIXI.utils.isMobile
 
-import Stage from '~/assets/fz/core/stage'
+// import Stage from '~/assets/fz/core/stage'
 import engine from '../../../../fw/core/engine'
 import timeout from '../../../../fz/utils/timeout'
 import gridObserver from '../../../grid/gridObserver'
 import TileAvatar from '../../../grid/tile/TileAvatar'
 import TileBg from '../../../grid/tile/TileBg'
-import TileBorders from '../../../grid/tile/TileBorders'
+// import TileBorders from '../../../grid/tile/TileBorders'
 import TileCircle from '../../../grid/tile/TileCircle'
-import TileImg from '../../../grid/tile/TileImg'
+// import TileImg from '../../../grid/tile/TileImg'
 import TileInfosBold from '../../../grid/tile/TileInfosBold'
 import TileInfosReg from '../../../grid/tile/TileInfosReg'
 
 // let TileShape
 // const TileShape = require(isMobile ? '../../../grid/tile/TileShapeStatic' : '../../../grid/tile/TileShape')
-import TileShapeStatic from '../../../grid/tile/TileShapeStatic'
-import TileShape from '../../../grid/tile/TileShape'
+// import TileShapeStatic from '../../../grid/tile/TileShapeStatic'
+// import TileShape from '../../../grid/tile/TileShape'
 import TileTitle from '../../../grid/tile/TileTitle'
 import TileTop from '../../../grid/tile/TileTop'
 import TileShare from '../../../grid/tile/TileShare'
@@ -55,23 +55,23 @@ class TileElements {
     //   this._img = new TileImg(this._size)
     //   this._elts.push(this._img)
     // }
-    this._top = new TileTop(this._size)
-    this._elts.push(this._top)
+    // this._top = new TileTop(this._size)
+    // this._elts.push(this._top)
     this._circle = new TileCircle(this._size)
     this._elts.push(this._circle)
     this._avatar = new TileAvatar(this._size)
     this._elts.push(this._avatar)
     // this._borders = new TileBorders(this._size)
     // this._elts.push(this._borders)
-    this._infosreg = new TileInfosReg(this._size)
-    this._elts.push(this._infosreg)
+    // this._infosreg = new TileInfosReg(this._size)
+    // this._elts.push(this._infosreg)
     this._infosBold = new TileInfosBold(this._size)
     this._elts.push(this._infosBold)
     this._title = new TileTitle(this._size)
     this._elts.push(this._title)
-    this._share = new TileShare(this._size)
-    this._elts.push(this._share)
-    this._top.setShare(this._share, this)
+    // this._share = new TileShare(this._size)
+    // this._elts.push(this._share)
+    // this._top.setShare(this._share, this)
     this._countElts = this._elts.length
   }
 
