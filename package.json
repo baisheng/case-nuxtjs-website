@@ -14,18 +14,19 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.3",
+    "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "bowser": "^2.0.0-beta.3",
     "cross-env": "^5.2.0",
     "gsap": "^2.0.2",
+    "lodash": "latest",
     "node-sass": "^4.9.3",
     "nuxt": "^2.1.0",
     "pixi.js": "^4.8.2",
     "prismjs": "^1.15.0",
     "sass-loader": "^7.1.0",
     "simplex-noise": "^2.4.0",
-    "vue-prism-component": "^1.0.1",
-    "lodash": "latest"
+    "vue-prism-component": "^1.0.1"
   },
   "engines": {
     "node": ">=8.9.0"

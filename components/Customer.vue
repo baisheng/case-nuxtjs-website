@@ -173,7 +173,7 @@
       content: "";
       display: block;
       position: relative;
-      width: calc(100% + 76px);
+      /*width: calc(100% + 76px);*/
       margin-left: -38px;
       padding-bottom: 2.77%;
       background-image: url(/assets/img/round-edge.svg);

@@ -19,6 +19,7 @@
             class="c-btn c-btn--primary d-block w-200 mh-auto xs:mh-0 mt-16 xs:mt-0"
             rel="noopener">GitHub</a> </div>
     </header>
+
     <div class="u-spacer32" />
   </section>
 </template>
@@ -75,18 +76,14 @@
   }
 
   .c-btn--primary, .btn.btn-static-primary:not(.immutable) {
-    text-shadow: 0 1px 0 #4b5ef0;
-    background: -webkit-gradient(linear, left top, left bottom, from(#aeb7ff), to(#5468ff));
-    background: linear-gradient(#aeb7ff, #5468ff);
-    -webkit-box-shadow: 0 7px 13px -3px rgba(45, 35, 66, 0.3), 0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #4b58ba;
-    box-shadow: 0 7px 13px -3px rgba(45, 35, 66, 0.3), 0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #4b58ba
+    text-shadow: 0 1px 0 #31B716;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#aeb7ff), to(#5468ff));*/
+    background: linear-gradient(#a6fd00, #31b716);
+    box-shadow: 0 7px 13px -3px rgba(40, 140, 0, 0.3), 0 2px 4px 0 rgba(42, 156, 20, 0.4), inset 0 -2px 0 0 #31b716
   }
 
   .c-btn--primary:hover, .btn.btn-static-primary:hover:not(.immutable), .c-btn--primary:focus, .btn.btn-static-primary:focus:not(.immutable) {
-    -webkit-box-shadow: 0 11px 16px -3px rgba(45, 35, 66, 0.3), 0 4px 5px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #4b58ba;
-    box-shadow: 0 11px 16px -3px rgba(45, 35, 66, 0.3), 0 4px 5px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #4b58ba;
-    -webkit-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
+    box-shadow: 0 11px 16px -3px rgba(31, 113, 0, 0.3), 0 4px 5px 0 rgba(27, 92, 0, 0.4), inset 0 -2px 0 0 #2a9c14;
     transform: translateY(-2px)
   }
 
@@ -276,4 +273,7 @@
     }
   }
 
+  .mb-20 {
+    margin-bottom: 1.25rem
+  }
 </style>

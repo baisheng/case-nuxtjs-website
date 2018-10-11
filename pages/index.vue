@@ -2,16 +2,34 @@
   <div
     id="app"
     style="position: relative;">
-    <c-nav />
+
+    <c-nav @toggleWechat="toggleWechat"/>
 
     <main
       id="#customers"
       class="customers customer-page">
       <c-hero/>
-      <section class="c-section c-section--no-pt bgc-moon">
+      <section
+        class="c-section c-section--no-pt bgc-moon">
         <div class="c-section_inner">
-          <div class="c-card p-24 ov-hidden maw-600 m-auto ">
-            <div class="mb-20">
+          <div
+            class="c-card p-24 ov-hidden maw-600 m-auto "
+            style="height: 260px;">
+            <div
+              v-show="isQrShow"
+              :class="{'mb-20': true, 'animated slideInDown': isQrShow === true} "
+              style="text-align: center;">
+              <p class="c-txt-body color-telluric mb-12">
+                扫码或直接加<strong>gcaufy_helper</strong> 为好友，验证回复 <strong>wepy</strong> 按指引进群。
+              </p>
+              <img
+                src="/assets/img/wechat-qrcode.png"
+                width="120"
+                height="120">
+            </div>
+            <div
+              v-show="!isQrShow"
+              :class="{'mb-20': true, 'animated slideInDown': isQrShow === false} ">
               <div
                 class="mb-20 h-30 d-inline-flex u-mb-small"
                 style="text-align: center;">
@@ -23,6 +41,23 @@
               </div>
               <p class="c-txt-body color-telluric">
               <strong>一款让小程序支持组件化开发的框架，</strong>通过预编译的手段让开发者可以选择自己喜欢的开发风格去开发小程序。框架的细节优化，Promise，Async Functions的引入都是为了能让开发小程序项目变得更加简单，高效。</p>
+            </div>
+
+            <div class="c-txt-label c-txt-label--poppins fl-right ta-right color-nova">
+              <a
+                v-show="!isQrShow"
+                class="c-social__wechat"
+                @click.stop="toggleWechat">
+                <img
+                  src="/assets/img/icon_wechat.svg">
+                <span>微信群</span>
+              </a>
+              <a
+                v-show="isQrShow"
+                class="c-social__wechat"
+                @click.stop="toggleWechat">
+                <span>返回</span>
+              </a>
             </div>
           </div>
         </div>
@@ -179,33 +214,41 @@
       <code-sample />
       <customer :case-data="cases"/>
       <footer class="c-footer u-pos-rel">
-        <span class="c-wave_dark" />
+        <!--<span class="c-wave_dark" />-->
         <div class="container">
-          <div class="row u-justify-center">
-            <div class="col-lg-6">
-              <a
-                class="c-footer-brand"
-                href="#">
-                <div class="c-footer-brand__icon">
-                  <img
-                    class=""
-                    src="/img/wepylogo.png"
-                    style="width:28px; height: 28px;"
-                    alt="Dashboard UI Kit">
+          <div
+            class="row u-flex u-justify-center u-text-center u-align-items-center"
+            style="flex-direction: column;">
+            <!--<a-->
+            <!--class="c-footer-brand"-->
+            <!--href="#">-->
+            <!--<div class="c-footer-brand__icon">-->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="130"
+              height="130"
+              viewBox="0 0 130 130"
+              class="mb-20"
+              style="width: 100px; height: 38px;">
+              <path
+                fill="#1CCC00"
+                fill-rule="evenodd"
+                d="M703,456 C667.101491,456 638,426.898509 638,391 C638,355.101491 667.101491,326 703,326 L704.444445,326 C739.545208,326 768,354.454792 768,389.555555 C768,416.660894 768,437.239156 768,451.290341 C768,454.578154 765.720461,456 762.894668,456 C721.768092,456 703,456 703,456 Z M703.541667,437.583333 C715.300846,437.583333 726.030394,433.174956 734.167815,425.920695 C743.626796,417.488305 749.583333,405.210598 749.583333,391.541667 C749.583333,366.113556 728.969777,345.5 703.541667,345.5 C678.113556,345.5 657.5,366.113556 657.5,391.541667 C657.5,416.969777 678.113556,437.583333 703.541667,437.583333 Z"
+                transform="rotate(90 547 -91)"/>
+            </svg>
 
-                </div>
-                <div class="c-footer-brand__text">
-                  <span class="c-footer-brand__text-title">WePY</span>
-                  <span class="c-footer-brand__text-description"><span/>帮你快速开发小程序</span>
 
-                </div>
-              </a>
-              <p class="u-text-small">
-                Copyright © 2017 THL A29 Limited a Tencent company All rights reserved
-              </p>
+            <!--</div>-->
+            <!--<div class="c-footer-brand__text">-->
+            <!--<span class="c-footer-brand__text-title">WePY</span>-->
+            <!--<span class="c-footer-brand__text-description"><span/>帮你快速开发小程序</span>-->
+            <!--</div>-->
+            <!--</a>-->
+            <p class="u-color-primary u-text-large">
+              Copyright © 2017 THL A29 Limited a Tencent company All rights reserved
+            </p>
 
-            </div>
-            <div class="col-lg-6">
+            <!--            <div class="col-lg-6">
               <div class="c-shieds u-clearfix"><p><a><img
                 src="https://img.shields.io/github/forks/wepyjs/wepy.svg?style=social&amp;label=Fork"></a> <a><img
                   src="https://img.shields.io/github/stars/wepyjs/wepy.svg?style=social&amp;label=Star"></a> <a><img
@@ -229,6 +272,7 @@
                         style="max-width: 100%;"></a></p></div>
 
             </div>
+          -->
           </div>
         </div>
       </footer>
@@ -274,6 +318,9 @@
     mounted () {
     },
     methods: {
+      toggleWechat () {
+        this.isQrShow = !this.isQrShow
+      },
       wxEnter: function() {
         this.isQrShow = true
       },
@@ -284,6 +331,12 @@
   }
 </script>
 <style>
+  .mb-16 {
+    margin-bottom: 1rem
+  }
+  .mb-12 {
+    margin-bottom: 0.75rem
+  }
   pre:not(:last-of-type) {
     margin-bottom: 2rem;
   }
@@ -1784,5 +1837,13 @@
   .block-badge.center {
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+  .fl-right {
+    float: right;
+  }
+  .ta-right {
+    text-align: right;
   }
 </style>

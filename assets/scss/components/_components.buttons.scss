@@ -19,9 +19,9 @@
 	margin: 0;
 	padding: $btn-padding;
 	transition: all 0.15s ease-in-out;
-	border: $btn-border-width solid;
+	//border: $btn-border-width solid;
 	border-radius: $btn-border-radius;
-	border-color: $btn-border-color; /* [1] */
+	//border-color: $btn-border-color; /* [1] */
 	color: $btn-color; /* [1] */
 	font-size: $btn-font-size;
 	font-weight: $btn-font-weight;
@@ -121,18 +121,18 @@
  * then we use our `linear-gradient` mixin to generate the background gradient.
  */
 
-.c-btn--primary {
-	@include linear-gradient(to bottom, $gunmetal-100, $gunmetal-400);
-	border-color: $gunmetal-200;
-
-	&:hover {
-		@include linear-gradient(to bottom, darken($gunmetal-100, 4%), darken($gunmetal-500, 4%));
-	}
-
-	&:focus {
-		@include linear-gradient(to bottom, darken($gunmetal-100, 6%), darken($gunmetal-500, 6%));
-	}
-}
+//.c-btn--primary {
+//	@include linear-gradient(to bottom, $gunmetal-100, $gunmetal-400);
+//	border-color: $gunmetal-200;
+//
+//	&:hover {
+//		@include linear-gradient(to bottom, darken($gunmetal-100, 4%), darken($gunmetal-500, 4%));
+//	}
+//
+//	&:focus {
+//		@include linear-gradient(to bottom, darken($gunmetal-100, 6%), darken($gunmetal-500, 6%));
+//	}
+//}
 
 .c-btn--secondary {
 	@include linear-gradient(to bottom, $white, $grey-200);
