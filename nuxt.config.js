@@ -31,6 +31,11 @@ module.exports = {
     // {src: '~assets/love.css'}
   ],
 
+  generate: {
+    routes: [
+      '/',
+    ]
+  },
   /*
   ** Plugins to load before mounting the App
   */

@@ -25,7 +25,6 @@ class GridDataManager extends Emitter {
   }
 
   set (type, value) {
-    console.log(type)
     this._data[type] = this._parse(type, value)
   }
 
@@ -41,7 +40,6 @@ class GridDataManager extends Emitter {
       list.push(data)
       // }
     }
-    console.log(list)
     return list
   }
 
@@ -53,9 +51,7 @@ class GridDataManager extends Emitter {
 
   getRandom () {
     const type = filters.getRandom()
-    console.log(type + 'xpxx-----')
     const list = this._data[type]
-    console.log(list.length)
     const data = list[Math.random() * list.length >> 0]
     return data
   }
