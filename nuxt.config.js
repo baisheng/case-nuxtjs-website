@@ -1,7 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -31,11 +31,11 @@ module.exports = {
     // {src: '~assets/love.css'}
   ],
 
-  generate: {
-    routes: [
-      '/',
-    ]
-  },
+  // generate: {
+  //   routes: [
+  //     '/',
+  //   ]
+  // },
   /*
   ** Plugins to load before mounting the App
   */
