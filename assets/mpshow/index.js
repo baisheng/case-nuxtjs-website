@@ -9,11 +9,11 @@ import topbar from "./ui/topbar";
 // import addcard from "./ui/addcard";
 
 import timeout from '../fz/utils/timeout'
-import poolGraphicsPharell from '../../assets/mpshow/grid/tile/pools/poolGraphicsPharell'
-import poolTileElements from '../../assets/mpshow/grid/tile/pools/poolTileElements'
-import gridObserver from '../../assets/mpshow/grid/gridObserver'
-import CardFlow from '../../assets/mpshow/cardflow/CardFlow'
-import Scene from '../../assets/mpshow/Scene'
+import poolGraphicsPharell from '~/assets/mpshow/grid/tile/pools/poolGraphicsPharell'
+import poolTileElements from '~/assets/mpshow/grid/tile/pools/poolTileElements'
+import gridObserver from '~/assets/mpshow/grid/gridObserver'
+import CardFlow from '~/assets/mpshow/cardflow/CardFlow'
+import Scene from '~/assets/mpshow/Scene'
 // const layer = require("iao/ui/layer");
 import layer from '../mpshow/ui/layer'
 import filters from "../mpshow/ui/filters";
