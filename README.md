@@ -1,8 +1,16 @@
 # wepy2-homepage
 
-> My praiseworthy Nuxt.js project
+> 为 WePY2 做的官方网站
 
-## Build Setup
+##
+[👉 在线示例](https://blissful-swanson-78f1fa.netlify.com/)
+
+## 基于 nuxtjs 构建
+
+- pixijs 实现案例动态案例展示
+- nuxtjs generate 生成静态页面
+
+## 构建步骤
 
 ``` bash
 # install dependencies
@@ -19,4 +27,4 @@ $ yarn start
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Screenshot
