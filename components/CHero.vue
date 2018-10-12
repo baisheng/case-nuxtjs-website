@@ -15,7 +15,7 @@
         从这里开始
       </a>
         <a
-          href="/https://github.com/Tencent/wepy"
+          href="https://github.com/Tencent/wepy"
           target="_blank"
           class="c-btn c-btn--primary d-block w-200 mh-auto xs:mh-0 mt-16 xs:mt-0"
           rel="noopener">
