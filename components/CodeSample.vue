@@ -21,7 +21,8 @@
         </div>
       </div>
     </div>
-    <div class="spacer120:fluid" />
+    <div class="spacer40:fluid" />
+    <!--<div class="spacer120:fluid" />-->
   </section>
 </template>
 
@@ -75,23 +76,6 @@
     /*.fill-titan {*/
       background-color: #f8faff !important;
     /*}*/
-    &:before{
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 180px;
-      background: #f8faff;
-      -webkit-transform: skewY(-3deg);
-      -ms-transform: skewY(-3deg);
-      transform: skewY(-3deg);
-      /* -webkit-transform: skewY(-6deg);
-       -ms-transform: skewY(-6deg);
-       transform: skewY(-6deg);*/
-      z-index: 0;
-      top: -60px;
-      left: 0;
-    }
   }
   .bgc-cosmos {
     background-color: #21243d;

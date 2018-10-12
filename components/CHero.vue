@@ -25,7 +25,7 @@
       </div>
     </header>
 
-    <div class="u-spacer32" />
+    <div class="u-spacer40" />
   </section>
 </template>
 <style lang="scss">

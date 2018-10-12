@@ -1,6 +1,8 @@
 <template>
   <section class="c-customer u-pos-rel">
     <div class="spacer40:fluid" />
+    <div class="spacer40:fluid" />
+
     <div class="container ">
       <div class="row u-justify-center">
         <div class="col-md-10 u-text-center">
@@ -152,23 +154,7 @@
   }
   .c-customer {
     /*background: #f8faff;*/
-    &:before{
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 180px;
-      background: #fff;
-      -webkit-transform: skewY(-3deg);
-      -ms-transform: skewY(-3deg);
-      transform: skewY(-3deg);
-      /* -webkit-transform: skewY(-6deg);
-       -ms-transform: skewY(-6deg);
-       transform: skewY(-6deg);*/
-      z-index: 0;
-      top: -60px;
-      left: 0;
-    }
+
     &:after {
       content: "";
       display: block;

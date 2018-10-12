@@ -9,6 +9,7 @@
       id="#customers"
       class="customers customer-page">
       <c-hero/>
+      <!--
       <section
         class="c-section c-section--no-pt bgc-moon">
         <div class="c-section_inner">
@@ -62,8 +63,10 @@
           </div>
         </div>
       </section>
+      -->
+      <section class="c-section c-features  u-pos-rel ">
+        <div class="spacer40:fluid" />
 
-      <section class="c-section  c-gradient-side">
         <div class="c-section_inner">
           <div class="container u-mb-large">
             <div class="row u-justify-center">
@@ -219,10 +222,18 @@
           <div
             class="row u-flex u-justify-center u-text-center u-align-items-center"
             style="flex-direction: column;">
-            <!--<a-->
-            <!--class="c-footer-brand"-->
-            <!--href="#">-->
-            <!--<div class="c-footer-brand__icon">-->
+            <div
+              :class="{'mb-20': true} "
+              style="text-align: center;">
+              <img
+                src="/assets/img/wechat-qrcode.png"
+                width="120"
+                height="120">
+
+              <p class="c-txt-body color-telluric mb-12">扫码验证回复 <strong>wepy</strong> 进群
+              </p>
+            </div>
+            <!--
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="130"
@@ -236,14 +247,7 @@
                 d="M703,456 C667.101491,456 638,426.898509 638,391 C638,355.101491 667.101491,326 703,326 L704.444445,326 C739.545208,326 768,354.454792 768,389.555555 C768,416.660894 768,437.239156 768,451.290341 C768,454.578154 765.720461,456 762.894668,456 C721.768092,456 703,456 703,456 Z M703.541667,437.583333 C715.300846,437.583333 726.030394,433.174956 734.167815,425.920695 C743.626796,417.488305 749.583333,405.210598 749.583333,391.541667 C749.583333,366.113556 728.969777,345.5 703.541667,345.5 C678.113556,345.5 657.5,366.113556 657.5,391.541667 C657.5,416.969777 678.113556,437.583333 703.541667,437.583333 Z"
                 transform="rotate(90 547 -91)"/>
             </svg>
-
-
-            <!--</div>-->
-            <!--<div class="c-footer-brand__text">-->
-            <!--<span class="c-footer-brand__text-title">WePY</span>-->
-            <!--<span class="c-footer-brand__text-description"><span/>帮你快速开发小程序</span>-->
-            <!--</div>-->
-            <!--</a>-->
+            -->
             <p class="u-color-primary u-text-large">
               Copyright © 2017 THL A29 Limited a Tencent company All rights reserved
             </p>
