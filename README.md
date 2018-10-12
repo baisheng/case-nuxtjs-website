@@ -7,8 +7,9 @@
 
 ## 基于 nuxtjs 构建
 
-- pixijs 实现案例动态案例展示
-- nuxtjs generate 生成静态页面
+- 支持 pixijs 实现案例动态案例展示
+- 支持 nuxtjs generate 生成静态页面
+- 支持部署到 netlify、Githubpages 等
 
 ## 构建步骤
 
@@ -28,3 +29,5 @@ $ yarn run generate
 ```
 
 ## Screenshot
+![](https://github.com/baisheng/wepy2-homepage/blob/master/screenshot/screeshot.png?raw=true?raw=true)
+
