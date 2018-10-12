@@ -7,7 +7,7 @@
         目前已有超过 5000 位开发者使用或了解本框架, 拥有众多的开发特性和优化方案.
       </p>
       <div class="mt-32 mh-auto d-flex fxd-column xs:fxd-row xs:jc-center lg:mt-48"> <a
-        href="https://player.vimeo.com/video/220624469?app_id=122963"
+        href="https://tencent.github.io/wepy/document.html"
         target="_blank"
         class="c-btn c-btn--secondary w-200 ml-auto mr-auto xs:ml-0 xs:mr-24"
         rel="noopener">
@@ -15,7 +15,8 @@
         从这里开始
       </a>
         <a
-          href="/schedule-demo"
+          href="/https://github.com/Tencent/wepy"
+          target="_blank"
           class="c-btn c-btn--primary d-block w-200 mh-auto xs:mh-0 mt-16 xs:mt-0"
           rel="noopener">
           <i class="fa fa-github u-mr-xsmall"/>
