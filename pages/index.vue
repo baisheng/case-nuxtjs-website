@@ -34,12 +34,12 @@
                 class="mb-20 h-30 d-inline-flex u-mb-small"
                 style="text-align: center;">
                 <img
-                  src="/assets/img/logo.svg"
+                  src="/assets/img/wepy-text.svg"
                   width="90"
                   height="28">
                 <span class="c-txt-label c-txt-label--poppins ml-8 color-telluric ws-nowrap"><sup><strong>/'wepi/</strong> </sup></span>
               </div>
-              <p class="c-txt-body color-telluric">
+              <p class="c-txt-body ">
               <strong>一款让小程序支持组件化开发的框架，</strong>通过预编译的手段让开发者可以选择自己喜欢的开发风格去开发小程序。框架的细节优化，Promise，Async Functions的引入都是为了能让开发小程序项目变得更加简单，高效。</p>
             </div>
 
@@ -248,31 +248,6 @@
               Copyright © 2017 THL A29 Limited a Tencent company All rights reserved
             </p>
 
-            <!--            <div class="col-lg-6">
-              <div class="c-shieds u-clearfix"><p><a><img
-                src="https://img.shields.io/github/forks/wepyjs/wepy.svg?style=social&amp;label=Fork"></a> <a><img
-                  src="https://img.shields.io/github/stars/wepyjs/wepy.svg?style=social&amp;label=Star"></a> <a><img
-                    src="https://img.shields.io/github/watchers/wepyjs/wepy.svg?style=social&amp;label=Watch"></a></p>
-                <p class="u-mt-xsmall"><a href="https://badge.fury.io/js/wepy"><img
-                  data-src="https://camo.githubusercontent.com/fdb99ae00102d3376f9c500a0505411d7037333b/68747470733a2f2f62616467652e667572792e696f2f6a732f776570792e737667"
-                  alt="npm version"
-                  src="https://badge.fury.io/js/wepy.svg"
-                  style="max-width: 100%;"></a> <a href="https://travis-ci.org/wepyjs/wepy"><img
-                    data-src="https://camo.githubusercontent.com/e32bbc2f8619b7408d917253244d0c119af5bdba/68747470733a2f2f7472617669732d63692e6f72672f776570796a732f776570792e7376673f6272616e63683d6d6173746572"
-                    alt="travis-ci"
-                    src="https://travis-ci.org/wepyjs/wepy.svg?branch=master"
-                    style="max-width: 100%;"></a> <a href="https://coveralls.io/github/wepyjs/wepy?branch=master"><img
-                      data-src="https://camo.githubusercontent.com/b9c60c722e692ddf5e85dd91cbbcc841633bed9f/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f776570796a732f776570792f62616467652e7376673f6272616e63683d6d6173746572"
-                      alt="Coverage Status"
-                      src="https://coveralls.io/repos/github/wepyjs/wepy/badge.svg?branch=master"
-                      style="max-width: 100%;"></a> <a href="https://david-dm.org/wepyjs/wepy"><img
-                        data-src="https://camo.githubusercontent.com/d3197e1930cec8f270b89fcff34d093d918b33b0/68747470733a2f2f64617669642d646d2e6f72672f776570796a732f776570792e737667"
-                        alt="Dependency Status"
-                        src="https://david-dm.org/wepyjs/wepy.svg"
-                        style="max-width: 100%;"></a></p></div>
-
-            </div>
-          -->
           </div>
         </div>
       </footer>
@@ -1823,8 +1798,7 @@
     display: block;
     margin-top: 0;
     margin-bottom: 1.5625rem;
-    background-image: linear-gradient(90deg, #65dc52 0%, #1bb934 100%);
-    /*background-image: linear-gradient(90deg, #E64C4C 0%, #EF32FB 100%);*/
+    background-image: linear-gradient(90deg, #A6FD00 0%, #1CCC00 100%);
     font-family: system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 13px;
     color: #000;

@@ -46,14 +46,15 @@
 	}
 }
 
-.c-nav__list {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	align-items: center;
+.c-nav__links {
+  align-items: center;
+  visibility: visible;
+  //margin-left: 2rem;
+  display: flex;
+  transform: scale(1);
+  opacity: 1;
+  background-color: transparent;
 }
-
-
 /**
  * 1. Allow positioning dropdown menus inside nav items.
  */

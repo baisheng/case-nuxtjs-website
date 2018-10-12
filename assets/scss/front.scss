@@ -95,57 +95,27 @@
 
 .c-nav_logo {
   width: 98px;
-  height: 24px;
+  height: 48px;
   display: block;
+  &:hover {
+    path {
+      fill: #a6fd00;
+      //transition: all .3s ease 0s;
+      //@include linear-gradient(to bottom, #a6fd00, #2a9c14);
+    }
+  }
 }
-
-.c-nav__links {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  visibility: visible;
-  margin-left: 2rem;
-  display: flex;
-  transform: scale(1);
-  opacity: 1;
-  background-color: transparent;
-}
-
 .c-nav__links, .c-nav__links-primary {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 .c-nav__links-primary {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
   list-style: none;
 
-}
-
-.c-nav__subnav-holder {
-  margin-right: 2rem;
-}
-
-.c-nav_subnav-btn {
-  cursor: default;
-  font-size: .75rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  position: relative;
-  color: #3a416f;
-  padding: 0.5rem;
-  display: flex;
 }
 
 .c-txt-link, .c-carousel-link, .c-code-sample_lang.active, .p-policies #policy-content a, body.about .ais-refinement-list--item__active .ais-refinement-list--label, .color-nebula, .c-highlight .no {
@@ -255,7 +225,6 @@ a.c-nav-brand {
     // padding: $spacer-xsmall $spacer-small;
   }
 }
-
 .c-social__github {
   margin: 0 0 0 25px;
   float: right;
@@ -275,15 +244,16 @@ a.c-nav-brand {
   border-radius: 23px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  i {
-    font-size: 20px;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 26px;
-  }
-  &:hover {
-    opacity: 1;
-    text-decoration: none;
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    &:hover {
+      path {
+        fill: #1CCC00;
+        transition: all .3s ease 0s;
+      }
+    }
   }
 }
 
@@ -414,10 +384,10 @@ a.c-nav-brand {
   font-weight: $nav-link-font-weight;
   display: block;
   //opacity: .6;
-  transition: all .3s ease 0s;
+  transition: all .5s ease 0s;
   &:hover {
     opacity: 1;
-    color: $green-500;
+    color: #1CCC00;
     text-decoration: none;
   }
 
@@ -825,11 +795,13 @@ a.cases {
   background-image: -webkit-gradient(linear, left top, right top, from(#f5f5fa), color-stop(#fff), to(#f5f5fa));
   background-image: linear-gradient(to bottom, #f5f5fa, #f5f5fa, #fff);
 }
+
 .c-block-feature-icons .wepy-features {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
 }
+
 .block-feature-icons .block-content {
   position: relative;
   z-index: 15;
@@ -843,6 +815,7 @@ section .wrapper {
   max-width: 71.25rem;
   margin: 0 auto;
 }
+
 .c-feature-card {
   display: flex;
   flex-direction: column;
@@ -914,8 +887,8 @@ section .wrapper {
  */
 
 .c-footer {
-  padding-top: $spacer-large;
-  padding-bottom: $spacer-small;
+  padding-top: $spacer-small;
+  padding-bottom: $spacer-large;
   padding-left: $spacer-small;
   //border-top: $base-border-width solid $base-border-color;
   //background: $black;
@@ -2058,10 +2031,12 @@ http://flickity.metafizzy.co
 .maw-100vw {
   max-width: 100vw
 }
+
 .c-section, .lg\:pv-80 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
 .c-section--no-pt {
   padding-top: 0;
 }
@@ -2096,7 +2071,11 @@ http://flickity.metafizzy.co
     line-height: 1.78;
   }
 }
-
+@media (min-width: 75em) {
+  .c-txt-section-subtitle, .p-policies h3, .lg\:fsz-24 {
+    font-size: 1.5rem;
+  }
+}
 .c-txt-section-title, .c-txt-section-subtitle, .p-policies h3, .c-txt-body, .c-txt-quote, .c-table, .p-policies table, .p-policies p, .p-policies ul, .p-policies ol, .p-policies b, .c-txt-small, .c-input, .fw-normal {
   font-weight: 400;
 }
@@ -2106,12 +2085,6 @@ http://flickity.metafizzy.co
     font-size: 1.125rem;
   }
 }
-
-.color-telluric {
-  color: #5d6494;
-}
-
-
 
 
 .filters {

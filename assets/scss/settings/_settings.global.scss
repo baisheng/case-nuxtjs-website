@@ -29,8 +29,8 @@ $grey-400: #dfe3e9 !default; // dfe1e5 E3E8EF
 $grey-500: #bbc5d5 !default;
 $grey-600: #b7c0cd !default; // c2cad4
 $grey-700: #9fa9ba !default;
-//$grey-800: #7f8fa4 !default; // 7f8fa4
-$grey-800: #9b9b9b !default; // 7f8fa4
+$grey-800: #7f8fa4 !default; // 7f8fa4
+//$grey-800: #9b9b9b !default; // 7f8fa4
 $gunmetal-100: #475364 !default;
 $gunmetal-200: #354052 !default; // main
 $gunmetal-300: #2d3848 !default;
@@ -166,7 +166,7 @@ $text-small-font-size: rem(12px) !default;
 $text-font-size: rem(14px) !default;
 $text-large-font-size: rem(16px) !default;
 $text-color: $grey-800;
-$text-strong-color: $black;
+$text-strong-color: $gunmetal-300;
 $text-mark-color: $white;
 $text-mark-background-color: #ff0;
 $text-mute-color: $color-mute;
@@ -181,7 +181,7 @@ $heading-margin-bottom: rem(8px) !default;
 $heading-color: $gunmetal-200;
 $heading-font-weight: $font-weight-semibold;
 // Links
-$link-color: $green-500 !default;
+$link-color: $gunmetal-500 !default;
 $link-text-decoration: none !default;
 $link-hover-color: $grey-400 !default;
 $link-hover-text-decoration: underline !default;
