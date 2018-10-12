@@ -9,7 +9,7 @@
           <p class="u-h3 u-text-mute u-mb-large u-text-bold">
             <span
               v-for="item in caseData"
-              :key="item.qrcode"
+              :key="item.name"
               :class="{'c-badge u-mr-small c-badge--default': true, 'c-badge--opensource': item.opensource}">
               <img
                 v-if="item.opensource"

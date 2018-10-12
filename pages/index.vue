@@ -276,18 +276,41 @@
       // Logo
     },
     async asyncData({ app }) {
-      let { cases } = await app.$axios.$get('/data/cases.json')
-      cases = filter(cases, (value) => {
-        return !isEmpty(value.qrcode)
-      })
-      return { cases }
+      const response = await fetch('/data/cases.json')
+      const json = await response.json();
+      return {
+        cases: json.cases
+      }
+        // .then(r => r.json())
+        // .then(json => {
+        //   return {
+        //     cases: json.cases
+        //   }
+          // this.cases = json.cases
+          // console.log(json.cases)
+        // })
+    //
+    //   let { cases } = await app.$axios.$get('/data/cases.json')
+    //   cases = filter(cases, (value) => {
+    //     return !isEmpty(value.qrcode)
+    //   })
+    //   return { cases }
     },
+
     data () {
       return {
         textCases: [],
         rollCases: [],
-        isQrShow: false,
+        isQrShow: false
       }
+    },
+    created () {
+      // fetch('/data/cases.json')
+      //   .then(r => r.json())
+      //   .then(json => {
+      //     this.cases = json.cases
+          // console.log(json.cases)
+        // })
     },
     // Allows descendants to inject everything.
     mounted () {
