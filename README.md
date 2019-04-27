@@ -1,6 +1,4 @@
-# wepy2-homepage
-
-> 为 WePY2 做的官方网站
+# 基于 nuxtjs 的静态网站示例
 
 ##
 [👉 在线示例](https://blissful-swanson-78f1fa.netlify.com/)
